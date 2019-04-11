@@ -6,6 +6,7 @@ from copy import deepcopy
 
 logger = logging.getLogger(__name__)
 
+
 def _use_connection(func):
     def wrapper(*args, **kwargs):
         args[0]._open_connection()
